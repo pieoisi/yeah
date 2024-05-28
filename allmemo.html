@@ -4,19 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>all memo</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <style>
-    body{
-        font-family: 'Noto Sans JP', sans-serif;
-    }
+        #note {
+            font-size: 120%;
+            margin-top: 3%;
+            background-color: #ececec;
+            width: auto;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        button {
+            margin-top: 1%;
+            margin-left: 3%;
+        }
     </style>
 </head>
 
 <body>
-    <div contenteditable="true" aria-placeholder="メモ"></div>
+    <textarea id="note"></textarea>
+    <button onclick="location.reload()">Reset</button>
 </body>
 
 </html>
